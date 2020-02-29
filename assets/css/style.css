@@ -100,6 +100,7 @@ body{
 .hero-box h1{
   color: aliceblue;  
   font-size: 1.5rem;
+  margin:0 0 0.67em 0 ;
 }
 
 .pip{
@@ -1652,7 +1653,7 @@ footer p{
   }
 
   #profile{
-    margin: 3em auto 0 auto;
+    margin: 3em auto;
   }
 
   .fullpage img{
