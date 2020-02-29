@@ -1601,7 +1601,7 @@ footer p{
 
   .info-container{
     position: relative;
-    margin-bottom: 8em;
+    margin-bottom: 3em;
    
   }
 
@@ -1650,6 +1650,10 @@ footer p{
     left:0%;
     outline: none;
     display: flex;
+  }
+
+  .buttons.p{
+    bottom:2%;
   }
 
   #profile{
