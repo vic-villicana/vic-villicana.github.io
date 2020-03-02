@@ -107,8 +107,10 @@ body{
 
 .pip{
   position:relative;
-  background: -webkit-image-set( url(/img/city-buildings-and-trees-during-golden-hour.jpg) no-repeat center center/cover 1x,
-                                 url(/img/city-buildings-and-trees-during-golden-hour_2x.jpg) no-repeat center center/cover 2x);
+  background: -webkit-image-set( url(/img/city-buildings-and-trees-during-golden-hour.jpg)  1x,
+                                 url(/img/city-buildings-and-trees-during-golden-hour_2x.jpg) 2x);
+  background-size:cover;
+  background-position:center;
   width:75%;
   height:75%;
   margin:0 auto;
