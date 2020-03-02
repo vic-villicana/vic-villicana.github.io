@@ -11,6 +11,7 @@ html{
   background:rgb(59, 65, 75);
   font-weight:400;
   scroll-behavior:smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -45,6 +46,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items:center;
   width:100%;
   height: 10vh;
   padding: 2em 0;
@@ -105,9 +107,7 @@ body{
 
 .pip{
   position:relative;
-  background: url(/img/city-buildings-and-trees-during-golden-hour.jpg);
-  background-position:center;
-  background-size:cover;
+  background: url(/img/city-buildings-and-trees-during-golden-hour.jpg) no-repeat center center/cover;
   width:75%;
   height:75%;
   margin:0 auto;
@@ -117,7 +117,7 @@ body{
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  
 }
 
 .pip2{
@@ -1064,6 +1064,17 @@ footer p{
     transform:translateY(0%);
   }
 
+  @keyframes navframes{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to{
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
   .burger{
     display: block;
     z-index: 3;
@@ -1078,6 +1089,11 @@ footer p{
   }
   .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .pip{
+    top:0%;
+    height: 80%;
   }
 
   .pro-info-container {
@@ -1126,7 +1142,7 @@ footer p{
     background: url(/img/bar-bartender.jpg);
     background-position: center;
     background-size: cover;
-    margin-top: 12em;
+    margin-top: 0em;
   }
 
   .void.v2{
@@ -1179,13 +1195,14 @@ footer p{
     max-width: 650px;
     margin: 0;
     height: auto;
+    left:0%;
   }
 
   .pro-info img{
     position: relative;
     max-width: 100%;
     height: 90%;
-    padding:.5em;
+    padding:0em;
     margin-bottom: 1.5em;
   }
 
@@ -1258,7 +1275,7 @@ footer p{
 
   .buttons {
     position: absolute;
-    bottom: 0%;
+    bottom: 11%;
     outline: none;
     display: flex;
   }
